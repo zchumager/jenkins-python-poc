@@ -5,6 +5,8 @@ pipeline {
         stage('Integration') {
             steps {
                 echo 'Integration tests'
+                sh 'pwd'
+                sh 'ls'
             }
         }
     }
