@@ -5,7 +5,7 @@ pipeline {
         stage('Integration') {
             steps {
                 echo 'Integration tests'
-                sh 'python -m venv venv'
+                sh 'python3 -m venv venv'
             }
         }
     }
