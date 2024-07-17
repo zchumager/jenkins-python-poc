@@ -5,7 +5,7 @@ pipeline {
         stage('Integration') {
             steps {
                 echo 'Integration tests'
-                sh 'apt install python3.11-venv'
+                sh 'apt-get install python3.11-venv'
                 sh 'python3 -m venv venv'
             }
         }
