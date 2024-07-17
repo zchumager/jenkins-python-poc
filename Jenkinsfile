@@ -5,8 +5,7 @@ pipeline {
         stage('Integration') {
             steps {
                 echo 'Integration tests'
-                sh 'pwd'
-                sh 'ls'
+                sh 'python -m venv venv'
             }
         }
     }
