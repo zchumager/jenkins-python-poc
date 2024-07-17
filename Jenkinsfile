@@ -5,7 +5,7 @@ pipeline {
         stage('Integration') {
             steps {
                 echo 'Integration tests'
-                sh 'source venv/bin/activate'
+                sh './venv/bin/activate'
             }
         }
     }
