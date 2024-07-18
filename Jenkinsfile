@@ -2,10 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Integration') {
+        stage('Setup Virtual Environment') {
             steps {
-                echo 'Integration tests'
-                sh 'virtualenv venv'
+                sh 'python3 -m venv myenv'
+                sh 'source myenv/bin/activate'
+                sh 'pip install -r requirements.txt'
             }
         }
     }
