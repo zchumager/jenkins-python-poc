@@ -5,7 +5,6 @@ pipeline {
         stage('Setup Virtual Environment') {
             steps {
                 echo 'Installing dependencies'
-                sh 'rm -rf venv && rm -rf myenv'
             }
         }
     }
