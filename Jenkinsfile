@@ -5,7 +5,7 @@ pipeline {
         stage('Integration') {
             steps {
                 echo 'Integration tests'
-                sh 'python3 -m venv venv && . venv/bin/activate'
+                sh 'virtualenv venv'
             }
         }
     }
